@@ -1,0 +1,161 @@
+div.test
+{
+    width: 100%;
+    height: 40px;
+    background: #2b2f3a;
+}
+
+body 
+{
+    margin: 0px;    
+    color: #eee;
+    font-family: Consolas, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+a{
+    color: #fff;  
+}
+
+div.punkt
+{
+    float: left;    
+    text-decoration: none;
+    height: calc(100% - 20px);
+    padding: 10px;
+}
+
+div.punkt:hover
+{
+    background: #444;
+    height: calc(100% - 25px);
+    border-bottom: 5px solid green;
+}
+
+div.punkt:active{
+    background-color: #fff;   
+}
+
+div.wrapper
+{
+    background-color: #3b3b3b;
+    margin: 0px auto;
+    width: 1024px;
+    height: 1000px;
+}
+
+nav.menu
+{
+    width: 100%;
+	height: 40px;    
+	background: #2b2f3a;
+}
+
+div.news{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 3px 3px 15px BLACK; 
+}
+
+div.paralax_wrapper {
+    background: #eee none repeat scroll 0 0;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+div.paralax_Vorder
+{
+    background-image: url(sources/Vorder.png);
+    width: 3346px; 
+    height: 100%;
+    position: absolute;
+    
+    animation-name: infinite-image;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+
+    -webkit-animation-name: infinite-image;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+}
+
+div.paralax_Mittel
+{
+    background-image: url(sources/Mittel.png);
+    width: 3346px; 
+    height: 100%;
+    position: absolute;
+    
+    animation-name: infinite-image;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+
+    -webkit-animation-name: infinite-image;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+}
+
+div.paralax_Hinter
+{
+    background-image: url(sources/Hinter.png);
+    width: 3346px; 
+    height: 100%;
+    position: absolute;
+    
+    animation-name: infinite-image;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+
+    -webkit-animation-name: infinite-image;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+}
+
+@keyframes infinite-image{
+    from{background-position: 0px 0px;}
+    to{background-position: -1980px 0px;}
+}
+
+div.paralax_biene{
+    width: 200px;
+    height: 200px;
+    background-image: url(sources/biene.png);
+    left: 30%;
+    position: absolute;
+    
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: upDown-move;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    /* Standard syntax */
+    animation-name: upDown-move;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes upDown-move{
+    0%   {left:30%; top:0px;}
+    50%  {left: 50%; top:15px;}
+    100% {left:40%; top:70px;}
+}
