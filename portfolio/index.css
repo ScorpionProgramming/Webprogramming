@@ -1,0 +1,58 @@
+body {
+	position: relative;
+
+}
+
+body,html{
+	height:100%;
+}
+
+.section{
+	padding-top:50px;
+	padding-bottom:50px;
+	color:#fff;
+}
+
+.section.section1 {background-color: #1E88E5; text-align:center; padding:0px;}
+.section.section2 {height:500px;background-color: #673ab7;}
+.section.section3{
+	background-color: #ff9800;
+	padding-left:0px;
+	padding-right: 0px;
+}
+.section.section4{background-color: #00ff99;}
+.section.section4.right {background-color: #00ff99;}
+
+
+.image{
+	padding:5px;
+}
+
+
+.wide {
+	width:100%;
+	height:100%;
+	height:calc(100% - 1px);
+	background-image:url('http://orig00.deviantart.net/4c10/f/2014/169/e/7/wood_planks_c4d_by_kceensrb-d7mw52p.png');
+	background-size:cover;
+}
+
+.wide img {
+	width:100%;
+}
+
+.logo {
+	padding:25px;
+	padding-top:100px;
+	color:#fff;
+	font-weight:800;
+	font-size:14pt;
+	text-align:center;
+}
+
+.line {
+	padding-top:100px;
+	white-space:no-wrap;
+	overflow:hidden;
+	text-align:center;
+}
